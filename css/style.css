@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap'); /*font urlsi*/
+
+
+/*tüm etiketlerin iç ve dış boşluklarını sıfır yaptık önce.*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+} /*font ailesini bleirttik*/
+
+#menuWrapper{
+  width: 100%;
+  height: 75px;
+  background-color: #000000;
+
+}
+
+#menu{
+    width: 1170px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto; /*menü kutusunu margin'e auto değerler verip ortaladık*/
+
+
+}
+.spotify_logo{
+    width: 190px;
+    height: 75px;
+    background-image: url("../images/spotify_logo.png"); /*..: bir dış klasöre çık*/
+    background-repeat: no-repeat; /*arkaplana resim ekleme özelliği tekrarlı gelir. logo birden fazla eklenir. onu kapattık.*/
+    background-position: center center; /*yatayda ve dikeyde ortaladık*/
+    float: left; /*sola geçmesini sağladık*/
+
+}
+
+#top_links{
+    width: auto; /* içerisine gelen öğe kadar genişler.*/
+    height: 75px;
+   float: right; /*sağa geçmesini sağladık*/
+    
+}
+
+#top_links ul{
+    list-style-type: none;
+}
+
+#top_links ul li{
+    display: inline; /*görünüm yanyana*/
+
+}
+
+#top_links ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    margin-left: 28px;
+    margin-right: 28px;
+    line-height: 75px; /*satır yüksekliği*/
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+#top_links ul li a:hover{ 
+    color:#1ed760;
+
+} /*top links kutusunun içindeki a'lara geldiğimizde yazının renginin değişmesi*/
+
+#banner_wrapper{
+    width: 100%;
+    height: 855px;
+    background-image: url("../images/banner_bg.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#banner_wrapper h1{
+    font-weight: bold;
+    font-size: 100px;
+    color: #1ed760;
+    padding-top: 200px;
+    line-height: 120px;
+}
+
+#banner_wrapper p{
+    font-weight: bold;
+    color: #1ed760;
+    font-size: 12px;
+    padding-top:40px;
+   
+}
+
+#banner_wrapper a{
+    display:inline-block;
+    background-color: #1ed760;
+    width: auto;
+    padding: 18px 26px; /*padding: 18px 26px 18px 26px şekkinde de yazılır sırası: yukarı sağ aşağı sol*/
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2d45ba;
+    font-size: 15px;
+    margin-top: 45px;
+}
+
+#banner_wrapper a:hover{
+    background-color: #ffffff;
+}
+
+#footerWrapper {
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+}
+
+#footer{
+    width: 1170px;
+    height: 250px;
+    padding-top: 50px;
+    
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer_menu_heading{
+    font-weight: bold;
+    color: #919496;
+    font-size: 12px;
+    margin-left: 13px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: block;
+}
+#footer_menu{
+    float: left;
+}
+#footer_menu ul{
+    list-style-type: none;
+}
+#footer_menu li{
+    display: inline; /*linkler yanyana*/
+}
+
+#footer_menu a{
+    font-weight: 500;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+#footer_menu a:hover{
+    color: #1ed760;
+}
+
+#social_menu {
+    width: auto;
+    height: 60px;
+    
+    float: right;
+    
+}
+
+#social_menu ul{
+    list-style: none;
+}
+
+#social_menu ul li{
+    display: inline;
+}
+
+#social_menu a{
+    margin-left: 14px;
+    
+}
+img.circle{
+    border-radius: 50%;
+    object-fit: cover;
+    border: #ffffff;
+}
+
+#footer_sub_menu{
+    width: auto;
+    height: 60px;
+    margin-top: 150px;
+}
+#footer_sub_menu ul{
+    list-style: none;
+}
+#footer_sub_menu ul li{
+    display: inline;
+}
+#footer_sub_menu a{
+        font-weight: 500;
+        font-size: 12px;
+        color: #ffffff;
+        text-decoration: none;
+        margin-left: 13px;
+        margin-right: 13px;
+      
+}
+#footer_sub_menu a:hover{
+    color: #1ed760;
+}
